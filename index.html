@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centro de Conciliación & Arbitraje EMISAB</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Centro de Conciliación & Arbitraje EMISAB</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <img src="img/oficina.jpg" alt="Foto de la oficina EMISAB" />
+      <h2>Resolución de conflictos de manera práctica</h2>
+      <p>Atendemos casos familiares, civiles, laborales y empresariales con procesos rápidos y accesibles.</p>
+    </section>
+
+    <!-- Qué es EMISAB -->
+    <section id="quienes-somos" class="tarjeta">
+      <h2>¿Qué es EMISAB?</h2>
+      <p>Somos un centro que ayuda a resolver conflictos sin necesidad de juicios largos. Nuestro trabajo es facilitar acuerdos claros y justos entre las partes.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="tarjeta">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Conciliación en temas familiares, civiles</li>
+        <li>Arbitraje</li>
+        <li>Asesoría y consultoría legal</li>
+        <li>Atención personalizada presencial y/o virtual</li>
+      </ul>
+    </section>
+
+    <!-- Listas desplegables -->
+    <section id="temas" class="tarjeta">
+      <h2>Áreas de Conciliación y Arbitraje</h2>
+
+      <details>
+        <summary>Área Familiar</summary>
+        <ul>
+          <li>Pensión de alimentos</li>
+          <li>Tenencia y visitas</li>
+          <li>Reconocimiento voluntario de filiación</li>
+          <li>Liquidación de bienes</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Área Civil</summary>
+        <ul>
+          <li>Reconocimiento de deudas</li>
+          <li>Incumplimiento de contratos</li>
+          <li>Desalojos por ocupación indebida</li>
+          <li>Entrega o devolución de bienes</li>
+          <li>Daños y perjuicios derivados de acuerdos</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Área Laboral</summary>
+        <ul>
+          <li>Pago de beneficios sociales</li>
+          <li>Compensación por tiempo de servicios (CTS)</li>
+          <li>Indemnizaciones por despido</li>
+          <li>Acuerdos por liquidación laboral</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Área Empresarial y Comercial</summary>
+        <ul>
+          <li>Controversias entre socios o proveedores</li>
+          <li>Incumplimiento de contratos de suministro</li>
+          <li>Cobros pendientes entre empresas</li>
+          <li>Conflictos en asociaciones y cooperativas</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Procedimientos Arbitrales</summary>
+        <ul>
+          <li>Arbitrajes en materia civil</li>
+          <li>Ejecución de contratos con cláusula arbitral</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Números de cuenta -->
+    <section id="cuentas" class="tarjeta">
+      <h2>Medios de Pago</h2>
+
+      <div class="cuenta">
+        <h3>Caja Arequipa</h3>
+        <p><strong>Tipo de Cuenta:</strong> AHORRO RENTABLE SOLES</p>
+        <p><strong>Número de cuenta:</strong> <span id="cajaCuenta">00007687002100008001</span></p>
+        <p><strong>CCI:</strong> <span id="cajaCCI">80312500007687000840</span></p>
+        <p><strong>A nombre de:</strong> Sterling Ancco</p>
+        <button onclick="copiarTexto('cajaCuenta')">Copiar cuenta</button>
+        <button onclick="copiarTexto('cajaCCI')">Copiar CCI</button>
+      </div>
+
+      <div class="cuenta">
+        <h3>BCP</h3>
+        <p><strong>Número de cuenta:</strong> <span id="bcpCuenta">21503672656049</span></p>
+        <p><strong>CCI:</strong> <span id="bcpCCI">00221510367265604926</span></p>
+        <p><strong>A nombre de:</strong> Sterling Ancco</p>
+        <button onclick="copiarTexto('bcpCuenta')">Copiar cuenta</button>
+        <button onclick="copiarTexto('bcpCCI')">Copiar CCI</button>
+      </div>
+    </section> 
+
+    <!-- Contacto -->
+    <section id="contacto" class="tarjeta">
+      <h2>Contáctanos</h2>
+      <p>Mensajería y redes sociales:</p>
+
+      <!-- Botones principales -->
+      <div class="contact-buttons">
+        <a href="https://wa.me/51959614829" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+        <a href="mailto:emisab.aqp@gmail.com" class="btn btn-email">📧 Correo</a>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="social-buttons">
+        <a href="https://www.facebook.com/centrodeconciliacionyarbitrajeemisab/" target="_blank" class="social fb">🌐 Facebook</a>
+        <a href="https://instagram.com/lucila.sterling" target="_blank" class="social ig">📸 Instagram</a>
+      </div>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 - Centro de Conciliación & Arbitraje EMISAB - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
