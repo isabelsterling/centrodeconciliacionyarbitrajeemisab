@@ -560,7 +560,7 @@ footer {
 /* Contenido de la sección noticias */
 .flyer-img {
   display: block;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto 20px;
   border-radius: 10px;
@@ -759,23 +759,25 @@ footer {
   .btn-whatsapp,
   .btn-email,
   .btn-maps {
-    width: 100%;        /* que ocupen todo el ancho */
-    margin: 0;          /* sin márgenes laterales */
-    text-align: center; /* texto centrado */
+    width: 100%;        /* ocupan todo el ancho */
+    margin: 0;
+    text-align: center;
     box-sizing: border-box;
   }
 
   /* Redes sociales */
   .social-buttons {
     flex-direction: column; /* en columna */
+    align-items: center;    /* centrados */
     gap: 10px;
     width: 100%;
   }
 
   .social {
-    width: 100%;        /* cada botón ocupa todo el ancho */
+    width: 80%;            /* más pequeño que 100% */
+    max-width: 300px;      /* límite para que no se estiren demasiado */
+    text-align: center;
     justify-content: center;
+    box-sizing: border-box;
   }
 }
-
-
