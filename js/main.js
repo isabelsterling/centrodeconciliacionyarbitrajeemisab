@@ -35,3 +35,14 @@ document.querySelectorAll("details").forEach(det => {
     }
   });
 });
+
+
+// Menú hamburguesa
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector("nav ul.menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+});
