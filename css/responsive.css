@@ -1,1 +1,68 @@
+/* ===== Responsive general ===== */
 
+/* Celulares (pantallas pequeñas, hasta 480px) */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #hero {
+    padding: 20px 10px;
+  }
+
+  #hero img {
+    max-width: 100%;
+  }
+
+  .tarjeta {
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets (pantallas medianas, 481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  #hero {
+    padding: 30px 15px;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn {
+    width: auto;
+  }
+}
+
+/* Laptops y pantallas grandes (769px en adelante) */
+@media (min-width: 769px) {
+  nav ul {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  #hero {
+    padding: 40px 20px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
