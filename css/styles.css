@@ -515,6 +515,16 @@ footer {
   margin-top: 5px;
 }
 
+/* Contenido de la sección noticias */
+.flyer-img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 
 
 
@@ -725,3 +735,4 @@ footer {
     justify-content: center;
   }
 }
+
