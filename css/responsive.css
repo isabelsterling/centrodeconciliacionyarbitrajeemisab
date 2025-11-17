@@ -2,31 +2,34 @@
 
 /* Celulares (pantallas pequeñas, hasta 480px) */
 @media (max-width: 480px) {
+  /* Menú en columna */
   nav ul {
     flex-direction: column;
     gap: 10px;
   }
 
-  #hero {
-    padding: 20px 10px;
-  }
-
-  #hero img {
-    max-width: 100%;
-  }
-
-  .tarjeta {
-    margin: 15px auto;
-    padding: 15px;
+  /* Botones principales (WhatsApp y correo) */
+  .contact-buttons {
+    display: flex;
+    flex-direction: column; /* uno debajo del otro */
+    gap: 10px;
   }
 
   .btn {
-    width: 100%;
-    margin: 8px 0;
+    width: 100%;   /* que ocupen todo el ancho */
+    margin: 0;     /* sin márgenes laterales */
+    text-align: center;
   }
 
-  .galeria {
-    grid-template-columns: 1fr;
+  /* Redes sociales */
+  .social-buttons {
+    flex-direction: column; /* en columna */
+    gap: 10px;
+  }
+
+  .social {
+    width: 100%;   /* cada botón ocupa todo el ancho */
+    justify-content: center;
   }
 }
 
