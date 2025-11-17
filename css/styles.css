@@ -48,6 +48,48 @@ nav ul li a[aria-current="page"] {
   color: #1b4332;
 }
 
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none; /* oculto en pantallas grandes */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Menú normal */
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  background: #2d6a4f;
+}
+
+/* Responsive: en móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* mostrar botón hamburguesa */
+    margin: 10px;
+  }
+
+  nav ul.menu {
+    display: none;           /* ocultar menú por defecto */
+    flex-direction: column;  /* en columna al desplegar */
+    gap: 15px;
+    background: #2d6a4f;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  nav ul.menu.active {
+    display: flex; /* mostrar menú cuando se activa */
+  }
+}
+
 /* ===== Hero ===== */
 #hero {
   background: #1b4332;
@@ -735,4 +777,5 @@ footer {
     justify-content: center;
   }
 }
+
 
