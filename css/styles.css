@@ -688,3 +688,40 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
+
+
+
+/* ===== Responsive especial para botones ===== */
+@media (max-width: 480px) {
+  /* Contenedor de botones principales */
+  .contact-buttons {
+    display: flex;
+    flex-direction: column; /* uno debajo del otro */
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* Botones generales */
+  .btn,
+  .btn-whatsapp,
+  .btn-email,
+  .btn-maps {
+    width: 100%;        /* que ocupen todo el ancho */
+    margin: 0;          /* sin márgenes laterales */
+    text-align: center; /* texto centrado */
+    box-sizing: border-box;
+  }
+
+  /* Redes sociales */
+  .social-buttons {
+    flex-direction: column; /* en columna */
+    gap: 10px;
+    width: 100%;
+  }
+
+  .social {
+    width: 100%;        /* cada botón ocupa todo el ancho */
+    justify-content: center;
+  }
+}
