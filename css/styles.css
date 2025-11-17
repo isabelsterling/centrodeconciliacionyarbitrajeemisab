@@ -499,6 +499,25 @@ footer {
 
 
 
+/* ===== NOTICIAS ===== */
+/* Noticias */
+.noticia h2 {
+  color: #1b4332;
+  margin-bottom: 8px;
+}
+
+.noticia em {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.noticia p {
+  margin-top: 5px;
+}
+
+
+
+
 /* ===== CONTACTO ===== */
 /* ===== Estilos generales ===== */
 body {
