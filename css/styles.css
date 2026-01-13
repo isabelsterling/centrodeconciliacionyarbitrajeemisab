@@ -542,7 +542,6 @@ footer {
 
 
 /* ===== NOTICIAS ===== */
-/* Noticias */
 .noticia h2 {
   color: #1b4332;
   margin-bottom: 8px;
@@ -557,7 +556,7 @@ footer {
   margin-top: 5px;
 }
 
-/* Contenido de la sección noticias */
+/* Imagen flyer */
 .flyer-img {
   display: block;
   max-width: 80%;
@@ -567,8 +566,40 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* Convocatoria cerrada */
+.cerrado {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
 
+/* Imágenes navideñas lado a lado */
+.imagenes-navidad {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
 
+.imagenes-navidad img {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagenes-navidad img:hover {
+  transform: scale(1.05);
+}
+
+/* Condiciones dentro de convocatorias */
+.noticia ul li strong {
+  color: #1b4332;   /* Verde institucional */
+  font-weight: bold;
+}
 
 /* ===== CONTACTO ===== */
 /* ===== Estilos generales ===== */
